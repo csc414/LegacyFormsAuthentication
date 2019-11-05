@@ -1,0 +1,23 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    @if(User.Identity.IsAuthenticated)
+    {
+        @:已登录:@User.Identity.Name
+    }
+    else
+    {
+        @:未登录
+    }
+</body>
+</html>
